@@ -29,3 +29,9 @@ Above documents include most of the security best practice, here are the highlig
 | 3rd Party Library                                                            | Ensure 3rd party library are secure and up to date.                                                                                                            |
 | Store API Key                                                                | Avoid storing API key or credential in the code or file.                                                                                                       |
 | Least Privilege                                                              | Request only permissions that the module needs.                                                                                                                |
+
+## Use security provider service and software
+* [Checkmarx](https://checkmarx.com/)
+* [Mend](https://www.mend.io/)
+* [Sonatype](https://www.sonatype.com/products/vulnerability-scanner)
+* [NetSPI](https://www.netspi.com/) for penetration testing.
