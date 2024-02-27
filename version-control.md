@@ -17,13 +17,18 @@
 
 1. `upstream`: the official, organizational repo; e.g. github.com/ForgeRock/javascript-sdk
 2. `origin`: your personal "fork" of the `upstream`; e.g. github.com/janedoe/javascript-sdk
-3. `main`: this is our "release" branch, used to be called `master`, that represents the released state of code
-4. `develop`: this is the main "development" branch that reflects the pre-release state of code †
+3. `main`: this is our "release" branch, used to be called `master`, that represents the released state of code †
+4. `develop`: this is the main "development" branch that reflects the pre-release state of code ††
 4. *feature branch*: this is a temporary branch that contains changes intended to be merged into `develop`
 5. rewriting history: commits in Git are line items in a ledger of sorts (think blockchain'ish), rewriting history is altering these items and their resulting SHAs
 6. `rebase`: a Git command that allows you to rewrite history
 
-† This isn't always called `develop`, it can also be called `beta` or `canary`, but the intention remains the same
+† There's often more complexity with branching for some projects (typically applications), though we don't use them:
+
+1. `stage`: potential release candidate
+2. `prod`: production release, can also be called `release`
+
+†† This isn't always called `develop`, it can also be called `beta` or `canary`, but the intention remains the same
 
 ## IV. Workflow
 
@@ -33,7 +38,15 @@ For more information regarding this workflow, see [this slide printout about Git
 
 ## V. Commits
 
-In general, commits should be meaningful, logically separated from other commits, and clear to read in the log. We follow the industry standard, [Conventional Commit specification](https://www.conventionalcommits.org/).
+In general, commits should be meaningful, logically separated from other commits, and clear to read in the log. We follow the industry standard, [Conventional Commit specification](https://www.conventionalcommits.org/). In addition, we recommend writing your Jira ticket number in the PR title, at the end.
+
+For example:
+
+```txt
+feat(token-vault): add transaction tracing for better analytics; SDKS-9999
+```
+
+The above translates to a "feature" being added to the sub-project "Token Vault" to enable better analytics, tracked in Jira ticket SDKS-9999.
 
 A good habit to adopt is to commit early, and commit often. To reduce commit clutter, use `git commit --amend` once you've written your first commit. The `--amend` flag just adds your changes to your previous commit. Add a separate commit only if the changes you've just introduced are meaningful, and logically separate from your previous commit.
 
