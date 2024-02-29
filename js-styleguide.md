@@ -83,7 +83,21 @@ Short notes, TODO comments or small helper comments can be inline style, e.g. `/
 
 ## Filenames
 
-Filenames are always lowercase and multiple words are separated by a dash. We also use a dot notation style to identify specific intention: `auth.test.js`, `auth.mock.js` or `username.interfaces.ts`. We avoid the use of `index` as much as we can to avoid needing to know that directory for context.
+Filenames are always lowercase, and multiple words are separated by a dash. We also use a dot notation style to identify specific intention: `auth.test.js`, `auth.mock.js` or `username.interfaces.ts`. We avoid the use of `index.js` or `index.ts` as much as possible. Doing so requires knowing what directory in file is in to understand context.
+
+```text
+// Good
+user-authentication.js
+header.ts
+stage-metadata.mock.js
+central-login.test.ts
+
+// Bad
+index.js
+embeddedLogin.ts
+main.ts
+session_management.js
+```
 
 ## Organization
 
