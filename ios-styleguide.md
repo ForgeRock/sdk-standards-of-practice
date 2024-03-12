@@ -16,6 +16,11 @@
   - [Minimal Imports](#minimal-imports)
 - [Spacing](#spacing)
 - [Comments](#comments)
+- [Documentation Comments](#documentation-comments)
+  - [Single-Sentence Summary](#single-sentence-summary)
+  - [Parameter, Returns, and Throws Tags](#parameter-returns-and-throws-tags)
+  - [Apple’s Markup Format](#apples-markup-format)
+  - [Where to Document](#where-to-document)
 - [Classes and Structures](#classes-and-structures)
   - [Use of Self](#use-of-self)
   - [Computed Properties](#computed-properties)
@@ -60,7 +65,7 @@ Strive to make your code compile without warnings. This rule informs many style 
 
 ## Using SwiftLint
 
-To inforce most of the guidelines in this document, we suggest to use our SwiftLint configuration. See the [SwiftLint Policy](#swiftlint-policy) section for more information.
+To enforce most of the guidelines in this document, we suggest to use our SwiftLint configuration. See the [SwiftLint Policy](#swiftlint-policy) section for more information.
 
 ## Naming
 
@@ -311,8 +316,49 @@ When they are needed, use comments to explain **why** a particular piece of code
 
 Avoid block comments inline with code, as the code should be as self-documenting as possible. _Exception: This does not apply to those comments used to generate documentation._
 
-Avoid the use of C-style comments (`/* ... */`). Prefer the use of double- or triple-slash.
+Avoid the use of C-style comments (`/* ... */`). Prefer the use of double-slash (for inline comments) or triple-slash (for generating documentation).
 
+## Documentation Comments
+
+Documentation comments are written using the format where each line is preceded by a triple slash (///).
+
+### Single-Sentence Summary
+
+Documentation comments begin with a brief single-sentence summary that describes the declaration. (This sentence may span multiple lines, but if it spans too many lines, the author should consider whether the summary can be simplified and details moved to a new paragraph.)
+
+### Parameter, Returns, and Throws Tags
+
+Clearly document the parameters, return value, and thrown errors of functions using the Parameter(s), Returns, and Throws tags, in that order. None ever appears with an empty description. When a description does not fit on a single line, continuation lines are indented 2 spaces in from the position of the hyphen starting the tag.
+
+The recommended way to write documentation comments in Xcode is to place the text cursor on the declaration and press **Command + Option + /**. This will automatically generate the correct format with placeholders to be filled in.
+
+### Apple’s Markup Format
+
+Use of [Apple’s markup format](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref/) is strongly encouraged to add rich formatting to documentation. Such markup helps to differentiate symbolic references (like parameter names) from descriptive text in comments and is rendered by Xcode and other documentation generation tools. Some examples of frequently used directives are listed below.
+
+* Paragraphs are separated using a single line that starts with /// and is otherwise blank.
+* \**Single asterisks*\* and \__single underscores_\_ surround text that should be rendered in italic/oblique type.
+* \*\***Double asterisks**\*\* and \_\___double underscores__\_\_ surround text that should be rendered in boldface.
+* Names of symbols or inline code are surrounded in \``backticks`\`.
+* Multi-line code (such as example usage) is denoted by placing three backticks ( \`\`\`) on the lines before and after the code block.
+
+### Where to Document
+
+At a minimum, documentation comments are present for every open or public declaration, and every open or public member of such a declaration.
+Here is a good example of a method documentation commment:
+
+```swift
+/// Returns the numeric value of the given digit represented as a Unicode scalar.
+///
+/// - Parameters:
+///   - digit: The Unicode scalar whose numeric value should be returned.
+///   - radix: The radix, between 2 and 36, used to compute the numeric value.
+/// - Throws: `InvalidRadixValue` if radix is out of range
+/// - Returns: The numeric value of the scalar.
+func numericValue(of digit: UnicodeScalar, radix: Int = 10) -> Int throws {
+  // ...
+}
+```
 ## Classes and Structures
 
 ### Use of Self
