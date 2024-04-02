@@ -1,8 +1,8 @@
-# iOS Security Guideline
+# Security Guidelines - iOS
 
 ## Introduction
 
-This will be an extension of the [General Security Guidelines](general-security-guidelines.md). Please read that document first.
+This will be an extension of the [General Security Guidelines](security-guidelines.md). Please read that document first.
 
 ### Secure Coding Practices
 Adhere to the latest secure coding guidelines provided by Apple.

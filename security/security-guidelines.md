@@ -1,8 +1,14 @@
-# General Security Guidelines
+# Security Guidelines
 
 ## Introduction
 
 This document outlines the security guidelines and best practices for developing all SDKs, libraries or frameworks. It aims to ensure that all products are developed with the highest security standards to protect company and user data.
+
+For platform-specific guidelines, refer to the following pages:
+
+* [Android-specific security](security-guidelines-android.md)
+* [iOS-specific security](security-guidelines-ios.md)
+* [Web-specific security](security-guidelines-web.md)
 
 ## References and Further Reading
 

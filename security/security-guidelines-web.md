@@ -1,4 +1,4 @@
-# Web Security Guidelines
+# Security Guidelines - Web
 
 This will be an extension of the General Security Guidelines. Please read that document first.
 

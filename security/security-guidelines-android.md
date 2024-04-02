@@ -1,4 +1,4 @@
-# Android Security Guideline
+# Security Guidelines - Android
 
 ## Introduction
 

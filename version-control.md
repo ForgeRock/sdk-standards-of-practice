@@ -1,19 +1,19 @@
 # Git Workflow Suggestions and Tips
 
-## I. Getting started
+## Getting started
 
 1. Make sure you have Git on your local computer, version 2.39 or higher
 2. Make sure you have a usable Github account
 3. Follow the [guide here to create your GPG keys for signing your commits](https://docs.github.com/en/authentication/managing-commit-signature-verification)
 4. If you want to use SSH for cloning, pulling and pushing, [create your SSH keys with this guide](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 
-## II. The Basics
+## The Basics
 
 1. Read the first three chapters from [Git SCM book](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
 2. Skip to [chapter six from the same book](https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration)
 3. Review the PDF from presentation: [WTF is Git(hub)?](https://www.dropbox.com/scl/fi/k8bjmdne9tvcjquny549g/WTF-is-Git-hub.pdf?rlkey=zahvqoniznsrrd6kn45av4g3r&dl=0)
 
-## III. Terminology
+## Terminology
 
 1. `upstream`: the official, organizational repo; e.g. github.com/ForgeRock/javascript-sdk
 2. `origin`: your personal "fork" of the `upstream`; e.g. github.com/janedoe/javascript-sdk
@@ -30,13 +30,13 @@
 
 †† This isn't always called `develop`, it can also be called `beta` or `canary`, but the intention remains the same
 
-## IV. Workflow
+## Workflow
 
 We use a unidirectional, rebase flow for version management. This means you pull changes from the `develop` branch (or `beta`, depending on the project) on `upstream`, which is the official, organizational repo, and you push changes to a feature branch located on either `origin` (this is a good place to push incomplete code), which is your own fork of the repo, or the official `upstream` (good for near complete or complete code).
 
 For more information regarding this workflow, see [this slide printout about Git(hub) Workflow](https://www.dropbox.com/scl/fi/ey4iyb5it9ersmrg5mmv2/Git-hub-Workflow.pdf?rlkey=l4nsxptu229h60wrzu1fgul5g&dl=0).
 
-## V. Commits
+## Commits
 
 In general, commits should be meaningful, logically separated from other commits, and clear to read in the log. We follow the industry standard, [Conventional Commit specification](https://www.conventionalcommits.org/). In addition, we recommend writing your Jira ticket number in the PR title, at the end.
 
@@ -58,7 +58,7 @@ Keeping your commits to a minimum is very advantageous when you need to do a reb
 
 Rules found within the Conventional Commit specification
 
-## VI. Rewriting History (Rebasing)
+## Rewriting History (Rebasing)
 
 Rebasing allows you to rewrite the commit history of your project. It's powerful and therefore comes with some rules and needed skill. But, the end result is a cleaner and easier to read Git log.
 
@@ -70,7 +70,7 @@ For more [information on how rewriting works, please read this article](https://
 2. Never rewrite public history
 3. Keep new commits to a minimum (3 or less)
 
-## VII. Pull Requests
+## Pull Requests
 
 Pull requests are best treated as a conversation about code. This means the individual creating the PR needs to initiate the conversation by providing context through an explanatory description including sceenshots, animated GIFs, if applicable. Not doing this is essentially handing someone something, and then just walking away.
 
@@ -83,7 +83,7 @@ Review PDF from presentation: [How to PR](https://www.dropbox.com/scl/fi/hbno7ul
 3. PRs should have Github comments on the portions of code changes that are points of focus for the reviewer
 4. PRs should have minimum code changes within files unrelated to the feature or bug fix
 
-## VIII. Reviewing PRs
+## Reviewing PRs
 
 Reviwing someone's PR should be the continuation of the conversation started by the PR creator. Read through the description, and attached images or GIFs to familiarize yourself with the changes. Then, review the code related comments left by the creator to help focus or guide your attention.
 
