@@ -106,4 +106,4 @@ When ready, start leaving comments as "review comments". That way they get bundl
 
 ## Semantic Versioning
 
-This is directly related to Git(hub), but it is definitely related to how we publically version our libraries, frameworks and SDKs. We roughly follow the Semantic Versioning spec, also known as Semver. You can [read more about it from this resource](https://semver.org/).
+This is directly related to Git(hub), but it is definitely related to how we publicly version our libraries, frameworks and SDKs. We roughly follow the Semantic Versioning spec, also known as Semver. You can [read more about it from this resource](https://semver.org/).

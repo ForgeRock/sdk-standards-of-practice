@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/ForgeRock"><img src="assets/images/ping_plus_forgerock_logo.svg"></a>
+  <a href="https://github.com/ForgeRock"><img src="assets/images/ping_identity_logo.svg"></a>
   <h2 align="center">Developer Experience Team<br/>Standards of Practice</h2>
   <hr />
 </p>
@@ -8,7 +8,7 @@
 
 The Developer Experience team is on a mission: **_we accelerate and simplify the integration of Ping and ForgeRock products into customer apps and websites_**.
 
-We are responsible for the following open-source projects:
+We are responsible for the following ForgeRock open-source projects:
 
  - [ForgeRock SDK for Android](https://github.com/ForgeRock/forgerock-android-sdk)
  - [ForgeRock SDK for iOS](https://github.com/ForgeRock/forgerock-ios-sdk)
@@ -16,7 +16,11 @@ We are responsible for the following open-source projects:
    - [ForgeRock Token Vault](https://github.com/ForgeRock/forgerock-javascript-sdk/tree/develop/packages/token-vault)
  - [ForgeRock Login Widget](https://github.com/ForgeRock/forgerock-web-login-framework)
 
-We will also be collaborating on the _Unified SDK_, bringing the best of both Ping and ForgeRock functionality to the fingertips of developers.
+We will also be collaborating on the new unified _Ping SDK_, bringing the best of both Ping and ForgeRock functionality to the fingertips of developers.
+
+- [Ping SDK for Android](https://github.com/ForgeRock/ping-android-sdk)
+- [Ping SDK for iOS](https://github.com/ForgeRock/ping-ios-sdk)
+- [Ping SDK for JavaScript](https://github.com/ForgeRock/ping-javascript-sdk)
 
 Success requires constant collaboration between contributors; each with their own skills, backgrounds, and beliefs.
 
@@ -78,21 +82,22 @@ As such, below we outline some technical aspects of creating our products, inclu
 
 Learn more about our **_technical_** guidelines:
 
-* [Performance guidelines](performance)
 * _Code style:_
-  * [Android code style](code-style/android-coding-standard.md)
+  * [Android code style](code-style/android-styleguide.md)
+  * [iOS code style](code-style/ios-styleguide.md)
   * [JavaScript code style](code-style/js-styleguide.md)
 * [Version control](version-control.md)
+* [Performance guidelines](performance.md)
 * [General JavaScript guidelines](js-standards.md) 
 
 <!------------------------------------------------------------------------------------------------>
 
 ## Disclaimer
 
-> **This code is provided by ForgeRock on an “as is” basis, without warranty of any kind, to the fullest extent permitted by law. ForgeRock does not represent or warrant or make any guarantee regarding the use of this code or the accuracy, timeliness or completeness of any data or information relating to this code, and ForgeRock hereby disclaims all warranties whether express, or implied or statutory, including without limitation the implied warranties of merchantability, fitness for a particular purpose, and any warranty of non-infringement. ForgeRock shall not have any liability arising out of or related to any use, implementation or configuration of this code, including but not limited to use for any commercial purpose. Any action or suit relating to the use of the code may be brought only in the courts of a jurisdiction wherein ForgeRock resides or in which ForgeRock conducts its primary business, and under the laws of that jurisdiction excluding its conflict-of-law provisions.**
+> **This code is provided by Ping Identity on an “as is” basis, without warranty of any kind, to the fullest extent permitted by law. Ping Identity does not represent or warrant or make any guarantee regarding the use of this code or the accuracy, timeliness or completeness of any data or information relating to this code, and Ping Identity hereby disclaims all warranties whether express, or implied or statutory, including without limitation the implied warranties of merchantability, fitness for a particular purpose, and any warranty of non-infringement. Ping Identity shall not have any liability arising out of or related to any use, implementation or configuration of this code, including but not limited to use for any commercial purpose. Any action or suit relating to the use of the code may be brought only in the courts of a jurisdiction wherein Ping Identity resides or in which Ping Identity conducts its primary business, and under the laws of that jurisdiction excluding its conflict-of-law provisions.**
 
 ---
-&copy; Copyright 2024 ForgeRock AS. All Rights Reserved.
+&copy; Copyright 2025 Ping Identity Corporation. All Rights Reserved.
 
 <!------------------------------------------------------------------------------------------------>
 [wave]: assets/images/Ico-Wave-48x48.png "Culture guidelines"

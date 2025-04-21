@@ -1,4 +1,4 @@
-# Swift Style Guide.
+# Swift Style Guide
 
 ## Table of Contents
 
@@ -242,7 +242,7 @@ var deviceModels: [String]
 
 * Indent using 2 spaces rather than tabs to conserve space and help prevent line wrapping. Be sure to set this preference in Xcode and in the Project settings as shown below:
 
-![Xcode indent settings](images/indentation.png)
+![Xcode indent settings](../assets/images/indentation.png)
 
 * Method braces and other braces (`if`/`else`/`switch`/`while` etc.) always open on the same line as the statement but close on a new line.
 * Tip: You can re-indent by selecting some code (or **Command-A** to select all) and then **Control-I** (or **Editor ▸ Structure ▸ Re-Indent** in the menu). Some of the Xcode template code will have 4-space tabs hard coded, so this is a good way to fix that.
@@ -1048,7 +1048,7 @@ If you are unable to use Homebrew, you may use one of the other methods describe
 
 **Do not** place the configuration file inside the Xcode project. This way one file can be used for multiple projects and targets.
 
-Download **com.pingidentity.swiftlint.yml** from the [Swift Style Guide repo](com.pingidentity.swiftlint.yml)) and place it in your home directory: **~/com.pingidentity.swiftlint.yml**.
+Download **com.pingidentity.swiftlint.yml** from the [Swift Style Guide repo](../com.pingidentity.swiftlint.yml)) and place it in your home directory: **~/com.pingidentity.swiftlint.yml**.
 
 ### Xcode Settings
 
@@ -1056,7 +1056,7 @@ You'll need to configure Xcode to remove trailing whitespace from all lines. Thi
 
 In Xcode's Preferences, select **Text Editing** ▸ **Editing** and check **Including whitespace-only lines**. 
 
-![](images/trailing-whitespace.png)
+![](../assets/images/trailing-whitespace.png)
 
 ### Running SwiftLint
 
@@ -1066,12 +1066,12 @@ You'll need to add the necessary instructions to your project to run SwiftLint a
 2. Select the **Build Phases** tab.
 3. Click **+** and choose **New Run Script Phase**.
 
-![](images/add-run-script.png)
+![](../assets/images/add-run-script.png)
 
 4. Drag the new phase before the **Compile Sources** phase.
 4. Click the disclosure triangle on the **Run Script** phase and ensure **Shell** is set to **/bin/sh**.
 
-![](images/empty-run-script.png)
+![](../assets/images/empty-run-script.png)
 
 6. Add the following script:
 ```

@@ -1,4 +1,4 @@
-# JavaScript Styleguide
+# JavaScript Style Guide
 
 Although most of the stylistic items are covered in ESLint or Prettier, there are a few things that are not. This will attempt to cover aspects to writing JavaScript/TypeScript as a unified organization.
 
