@@ -240,7 +240,7 @@ var deviceModels: [String]
 
 ## Spacing
 
-* Indent using 2 spaces rather than tabs to conserve space and help prevent line wrapping. Be sure to set this preference in Xcode and in the Project settings as shown below:
+* Indent using 4 spaces rather than tabs to conserve space and help prevent line wrapping. Be sure to set this preference in Xcode and in the Project settings as shown below:
 
 ![Xcode indent settings](../assets/images/indentation.png)
 
@@ -1007,7 +1007,7 @@ file:
 //  FileName.swift
 //  PackageName
 //
-//  Copyright (c) 2022-2024 ForgeRock. All rights reserved.
+//  Copyright (c) 2022-2025 Ping Identity Corporation. All rights reserved.
 //
 //  This software may be modified and distributed under the terms
 //  of the MIT license. See the LICENSE file for details.
@@ -1015,6 +1015,7 @@ file:
 ```
 
 ## Other considerations:
+* All new libraries should be in Swift 6 mode (in **Build Settings** the **Swift Language Version** should be set to **Swift 6**)
 * Use // MARK: - comments to logically separate code into sections within a file for easier navigation.. These comments are also interpreted by Xcode and provide bookmarks in the source window’s navigation bar. 
 * Use Swift's Error Handling: Leverage `throw`, `try`, and `catch` for handling errors and avoid returning `nil` or using `NSAssert` in production code.
 * Follow Swift's concurrency model using async/await and Actors to write safe concurrent code.
