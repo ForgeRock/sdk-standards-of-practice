@@ -4,7 +4,7 @@ General performance guidelines for SDK & App Development
 
 ## General guidelines
 
-* Aid in keeping application bundle size as small as reasonably possible.
+* Aim in keeping application bundle size as small as reasonably possible.
 * Keep HTTP payloads between client and server as lean as possible.
 * Prefer native constructs or native platform features, avoiding the use of third-party libraries, if possible.
 * If a third-party library is necessary, choose a narrowly-focused, performance-oriented option (not a feature rich option).

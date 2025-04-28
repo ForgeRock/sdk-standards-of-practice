@@ -6,9 +6,9 @@
 
 <!------------------------------------------------------------------------------------------------>
 
-The Developer Experience team is on a mission: **_we accelerate and simplify the integration of Ping and ForgeRock products into customer apps and websites_**.
+The client-side Ping SDK team is on a mission to enhance the developer experience by simplifying application integration for developers.
 
-We are responsible for the following ForgeRock open-source projects:
+We are responsible for the the following open-source projects:
 
  - [ForgeRock SDK for Android](https://github.com/ForgeRock/forgerock-android-sdk)
  - [ForgeRock SDK for iOS](https://github.com/ForgeRock/forgerock-ios-sdk)
