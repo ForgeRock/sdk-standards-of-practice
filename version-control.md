@@ -11,7 +11,7 @@
 
 1. Read the first three chapters from [Git SCM book](https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control)
 2. Skip to [chapter six from the same book](https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration)
-3. Review the PDF from presentation: [WTF is Git(hub)?](https://www.dropbox.com/scl/fi/k8bjmdne9tvcjquny549g/WTF-is-Git-hub.pdf?rlkey=zahvqoniznsrrd6kn45av4g3r&dl=0)
+3. Review the PDF from presentation: [WTF is Git(hub)?](https://docs.google.com/presentation/d/1i0VrkPHoyVPzSIM43dJLSF3l2GnLG33BoVOMtjPPQ1E/edit?usp=sharing)
 
 ## Terminology
 
@@ -34,7 +34,7 @@
 
 We use a unidirectional, rebase flow for version management. This means you pull changes from the `develop` branch (or `beta`, depending on the project) on `upstream`, which is the official, organizational repo, and you push changes to a feature branch located on either `origin` (this is a good place to push incomplete code), which is your own fork of the repo, or the official `upstream` (good for near complete or complete code).
 
-For more information regarding this workflow, see [this slide printout about Git(hub) Workflow](https://www.dropbox.com/scl/fi/ey4iyb5it9ersmrg5mmv2/Git-hub-Workflow.pdf?rlkey=l4nsxptu229h60wrzu1fgul5g&dl=0).
+For more information regarding this workflow, see [this slide printout about Git(hub) Workflow](https://docs.google.com/presentation/d/1GYrJ4SZwPMsfvjffizbJRlc9vpFOo5Oxq4EYB6yOvQQ/edit?usp=sharing).
 
 ## Commits
 
@@ -106,4 +106,4 @@ When ready, start leaving comments as "review comments". That way they get bundl
 
 ## Semantic Versioning
 
-This is directly related to Git(hub), but it is definitely related to how we publically version our libraries, frameworks and SDKs. We roughly follow the Semantic Versioning spec, also known as Semver. You can [read more about it from this resource](https://semver.org/).
+This is directly related to Git(hub), but it is definitely related to how we publicly version our libraries, frameworks and SDKs. We roughly follow the Semantic Versioning spec, also known as Semver. You can [read more about it from this resource](https://semver.org/).

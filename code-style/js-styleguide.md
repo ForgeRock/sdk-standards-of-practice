@@ -1,4 +1,4 @@
-# JavaScript Styleguide
+# JavaScript Style Guide
 
 Although most of the stylistic items are covered in ESLint or Prettier, there are a few things that are not. This will attempt to cover aspects to writing JavaScript/TypeScript as a unified organization.
 
@@ -98,6 +98,19 @@ embeddedLogin.ts
 main.ts
 session_management.js
 ```
+
+## Copyright Statement
+
+The following copyright statement should be included at the top of every source file:
+
+```
+/*
+ * Copyright (c) 2020 - 2025 Ping Identity Corporation. All rights reserved.
+ *
+ * This software may be modified and distributed under the terms
+ * of the MIT license. See the LICENSE file for details.
+ */
+ ```
 
 ## Organization
 
